@@ -1,0 +1,2 @@
+*.fmw binary
+*.fmw diff=fmeworkbench merge=fmeworkbench

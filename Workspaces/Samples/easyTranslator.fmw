@@ -1,0 +1,1211 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        fme.exe easyTranslator.fmw
+#          --SourceDataset_GENERIC ""
+#          --SourceFormat "GUESS_FROM_EXTENSION"
+#          --COORDSYS ""
+#          --GENERIC_OUT_BASE_NAME_GENERIC "translated_data"
+#          --DestinationFormat ""
+#          --COORDSYS_Dest ""
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This workspace users a generic reader and generic writer that allows the user to specify which file and format to read, as well as the output format.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Published parameters allow the user to select:&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Source data file&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Source data format&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Input coordinate system&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Destination file location&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Destination data format&lt;/li&gt;&#10;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Output coordinate system&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2367.83 882.635"
+#!   DOC_TOP_LEFT="-847.323 -691.315"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="23248"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="5df109f4-5691-47f8-89ca-619ffaa5e536"
+#!   FME_DOCUMENT_PRIORGUID="d8440b63-2176-4a66-b7e2-f141db3c593e,9095bac9-ebee-4426-83d6-a915c6506c34,446a8941-e089-4e21-9d04-ffc6af08248d"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY="22-03-2023,Kate&lt;space&gt;Brillinger,Updated&lt;space&gt;description"
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2023.0.0.0 (20230302 - Build 23248 - WIN64)"
+#!   LAST_SAVE_DATE="2023-03-22T08:33:06"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE="Generic format translator"
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-1042.62 613.643"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="110"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="GENERIC"
+#!   DATASET="$(SourceDataset_GENERIC)"
+#!   KEYWORD="GENERIC_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="fme_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_format_long_name char(255) fme_format_short_name char(255) fme_geometry char(50) fme_primary_axis real64 fme_rotation real64 fme_secondary_axis real64 fme_start_angle real64 fme_sweep_angle real64 fme_text_size real64 fme_text_string char(50) fme_type char(50) multi_reader_full_id int32 multi_reader_id int32 multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="20155"
+#!   NAME="&lt;not set&gt; [GENERIC]"
+#!   COORDSYS="$(COORDSYS)"
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="READER_SCHEMAS_TO_SKIP"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_PUBLISH"
+#!   VALUE="SourceDataset DestDataset GENERIC_OUT_FORMAT"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=""
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="GENERIC"
+#!   DATASET="E:/Safe Software/FMEFlow/resources/system/temp/engineresults"
+#!   KEYWORD="GENERIC_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="200"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="fme_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_format_long_name char(255) fme_format_short_name char(255) fme_geometry char(50) fme_primary_axis real64 fme_rotation real64 fme_secondary_axis real64 fme_start_angle real64 fme_sweep_angle real64 fme_text_size real64 fme_text_string char(50) fme_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="20155"
+#!   COORDSYS="$(COORDSYS_Dest)"
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="READER_SCHEMAS_TO_SKIP"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_PUBLISH"
+#!   VALUE="SourceDataset DestDataset GENERIC_OUT_FORMAT"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=""
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbinary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binarybuffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="copied"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varbinary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binarybuffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="copied"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GENERIC"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GENERIC"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_rectangle"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_rounded_rectangle"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_any"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_area"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_area"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_rectangle"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_rounded_rectangle"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_any"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_area"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GENERIC"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="GENERIC"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="FeatureTypeName"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="fme_line"
+#!   POSITION="-551.94443533210983 -221.87789102027364"
+#!   BOUNDING_RECT="-551.94443533210983 -221.87789102027364 430 71"
+#!   ORDER="500000000000002"
+#!   COLLAPSED="true"
+#!   KEYWORD="GENERIC_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FNODE_" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TNODE_" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LPOLY_" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="RPOLY_" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LENGTH" ATTR_TYPE="decimal(18,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AIRPORTS_" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AIRPORTS_I" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LINE" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ADD_DATE" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NBTS" ATTR_TYPE="decimal(11,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FILLCHAR" ATTR_TYPE="varchar(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NAME" ATTR_TYPE="varchar(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="DYNAMIC"
+#!   FEATURE_TYPE_NAME="@Value(fme_feature_type)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="4"
+#!   FEAT_GEOMTYPE="fme_any"
+#!   POSITION="746.37726398351606 -221.87789102027364"
+#!   BOUNDING_RECT="746.37726398351606 -221.87789102027364 430 71"
+#!   ORDER="6"
+#!   COLLAPSED="false"
+#!   KEYWORD="GENERIC_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="2"
+#!   DYNAMIC_SCHEMA="true"
+#!   DYNAMIC_SCHEMA_SOURCES="GENERIC_1"
+#!   DYNAMIC_SCHEMA_FEATURE_TYPE="AUTOMATIC"
+#!   DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="@Value(fme_feature_type)"
+#!   DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
+#!   DYNAMIC_SCHEMA_DEFINITION_NAME=""
+#!   DYNAMIC_SCHEMA_GEOMETRY="AUTOMATIC"
+#!   DYNAMIC_SCHEMA_GEOMETRY_NAME="from_schema_definition"
+#!   DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
+#! >
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmedatadownload"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE="GENERIC_1"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="OUTPUT_WRITER"
+#!   VALUE="GENERIC_2"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#!   NAME="fmedatastreaming"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE="GENERIC_1"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="OUTPUT_WRITER"
+#!   VALUE="GENERIC_2"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE="GENERIC_1"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="Samples"
+#! />
+#! <ITEM
+#!   NAME="easyTranslator.fmw"
+#! />
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="GENERIC_1"
+#!   OVERRIDE="-GENERIC_1_DATASET"
+#!   DATASET="GENERIC_1/"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="GENERIC_2"
+#!   OVERRIDE="-GENERIC_2_DATASET"
+#!   DATASET="GENERIC_2/engineresults"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILE_OR_URL SourceDataset_GENERIC INCLUDE_WEB_BROWSER%All_files(*)|* Source File"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE SourceFormat *Have&lt;space&gt;FME&lt;space&gt;guess&lt;space&gt;from&lt;space&gt;the&lt;space&gt;file&lt;space&gt;extension*,GUESS_FROM_EXTENSION%Autodesk&lt;space&gt;AutoCAD&lt;space&gt;DWG&lt;solidus&gt;DXF,ACAD%Comma&lt;space&gt;Separated&lt;space&gt;Value&lt;space&gt;&lt;openparen&gt;CSV&lt;closeparen&gt;,CSV%GeoJSON&lt;space&gt;&lt;openparen&gt;Geographic&lt;space&gt;JavaScript&lt;space&gt;Object&lt;space&gt;Notation&lt;closeparen&gt;,GEOJSON%GML&lt;space&gt;&lt;openparen&gt;Geography&lt;space&gt;Markup&lt;space&gt;Language&lt;closeparen&gt;,GML%GPS&lt;space&gt;eXchange&lt;space&gt;Format&lt;space&gt;&lt;openparen&gt;GPX&lt;closeparen&gt;,GPX%Bentley&lt;space&gt;MicroStation&lt;space&gt;Design&lt;space&gt;&lt;openparen&gt;V7&lt;closeparen&gt;,IGDS%MapInfo&lt;space&gt;MIF&lt;solidus&gt;MID,MIF%MapInfo&lt;space&gt;TAB&lt;space&gt;&lt;openparen&gt;MITAB&lt;closeparen&gt;,MITAB%Google&lt;space&gt;Earth&lt;space&gt;KML,OGCKML%Autodesk&lt;space&gt;MapGuide&lt;space&gt;Enterprise&lt;space&gt;SDF,SDF3%Esri&lt;space&gt;Shape,SHAPEFILE%SQLite&lt;space&gt;Spatial&lt;space&gt;&lt;openparen&gt;FDO&lt;closeparen&gt;,SQLITE3FDO Source Format"
+#!   DEFAULT_VALUE="GUESS_FROM_EXTENSION"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL COORDSYS COORDSYS Input Coordinate System"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING GENERIC_OUT_BASE_NAME_GENERIC Destination Filename"
+#!   DEFAULT_VALUE="translated_data"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE DestinationFormat Autodesk&lt;space&gt;AutoCAD&lt;space&gt;DWG&lt;solidus&gt;DXF,ACAD%Comma&lt;space&gt;Separated&lt;space&gt;Value&lt;space&gt;&lt;openparen&gt;CSV&lt;closeparen&gt;,CSV%GeoJSON&lt;space&gt;&lt;openparen&gt;Geographic&lt;space&gt;JavaScript&lt;space&gt;Object&lt;space&gt;Notation&lt;closeparen&gt;,GEOJSON%GPS&lt;space&gt;eXchange&lt;space&gt;Format&lt;space&gt;&lt;openparen&gt;GPX&lt;closeparen&gt;,GPX%Bentley&lt;space&gt;MicroStation&lt;space&gt;Design&lt;space&gt;&lt;openparen&gt;V7&lt;closeparen&gt;,IGDS%MapInfo&lt;space&gt;MIF&lt;solidus&gt;MID,MIF%MapInfo&lt;space&gt;TAB&lt;space&gt;&lt;openparen&gt;MITAB&lt;closeparen&gt;,MITAB%Google&lt;space&gt;Earth&lt;space&gt;KML,OGCKML%Autodesk&lt;space&gt;MapGuide&lt;space&gt;Enterprise&lt;space&gt;SDF,SDF3%Esri&lt;space&gt;Shape,SHAPEFILE%SQLite&lt;space&gt;Spatial&lt;space&gt;&lt;openparen&gt;FDO&lt;closeparen&gt;,SQLITE3FDO%GML&lt;space&gt;&lt;openparen&gt;Geography&lt;space&gt;Markup&lt;space&gt;Language&lt;closeparen&gt;,GML Destination Format"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL COORDSYS COORDSYS_Dest Output Coordinate System"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImFsbG93VVJMIjp0cnVlLCJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0dFTkVSSUMiLCJwcm9tcHQiOiJTb3VyY2UgRmlsZSIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoidXNlckRlZmluZWQiLCJjaG9pY2VzIjpbeyJkaXNwbGF5IjoiKkhhdmUgRk1FIGd1ZXNzIGZyb20gdGhlIGZpbGUgZXh0ZW5zaW9uKiIsInZhbHVlIjoiR1VFU1NfRlJPTV9FWFRFTlNJT04ifSx7ImRpc3BsYXkiOiJBdXRvZGVzayBBdXRvQ0FEIERXRy9EWEYiLCJ2YWx1ZSI6IkFDQUQifSx7ImRpc3BsYXkiOiJDb21tYSBTZXBhcmF0ZWQgVmFsdWUgKENTVikiLCJ2YWx1ZSI6IkNTViJ9LHsiZGlzcGxheSI6Ikdlb0pTT04gKEdlb2dyYXBoaWMgSmF2YVNjcmlwdCBPYmplY3QgTm90YXRpb24pIiwidmFsdWUiOiJHRU9KU09OIn0seyJkaXNwbGF5IjoiR01MIChHZW9ncmFwaHkgTWFya3VwIExhbmd1YWdlKSIsInZhbHVlIjoiR01MIn0seyJkaXNwbGF5IjoiR1BTIGVYY2hhbmdlIEZvcm1hdCAoR1BYKSIsInZhbHVlIjoiR1BYIn0seyJkaXNwbGF5IjoiQmVudGxleSBNaWNyb1N0YXRpb24gRGVzaWduIChWNykiLCJ2YWx1ZSI6IklHRFMifSx7ImRpc3BsYXkiOiJNYXBJbmZvIE1JRi9NSUQiLCJ2YWx1ZSI6Ik1JRiJ9LHsiZGlzcGxheSI6Ik1hcEluZm8gVEFCIChNSVRBQikiLCJ2YWx1ZSI6Ik1JVEFCIn0seyJkaXNwbGF5IjoiR29vZ2xlIEVhcnRoIEtNTCIsInZhbHVlIjoiT0dDS01MIn0seyJkaXNwbGF5IjoiQXV0b2Rlc2sgTWFwR3VpZGUgRW50ZXJwcmlzZSBTREYiLCJ2YWx1ZSI6IlNERjMifSx7ImRpc3BsYXkiOiJFc3JpIFNoYXBlIiwidmFsdWUiOiJTSEFQRUZJTEUifSx7ImRpc3BsYXkiOiJTUUxpdGUgU3BhdGlhbCAoRkRPKSIsInZhbHVlIjoiU1FMSVRFM0ZETyJ9XX0sImRlZmF1bHRWYWx1ZSI6IkdVRVNTX0ZST01fRVhURU5TSU9OIiwibmFtZSI6IlNvdXJjZUZvcm1hdCIsInByb21wdCI6IlNvdXJjZSBGb3JtYXQiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJjb29yZGluYXRlU3lzdGVtcyIsInJlcHJvamVjdGlvbkVuZ2luZSI6ImZtZSJ9LCJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJuYW1lIjoiQ09PUkRTWVMiLCJwcm9tcHQiOiJJbnB1dCBDb29yZGluYXRlIFN5c3RlbSIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6InRyYW5zbGF0ZWRfZGF0YSIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImVkaXRvciI6InBsYWludGV4dCIsIm5hbWUiOiJHRU5FUklDX09VVF9CQVNFX05BTUVfR0VORVJJQyIsInByb21wdCI6IkRlc3RpbmF0aW9uIEZpbGVuYW1lIiwicmVxdWlyZWQiOmZhbHNlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJ1c2VyRGVmaW5lZCIsImNob2ljZXMiOlt7ImRpc3BsYXkiOiJBdXRvZGVzayBBdXRvQ0FEIERXRy9EWEYiLCJ2YWx1ZSI6IkFDQUQifSx7ImRpc3BsYXkiOiJDb21tYSBTZXBhcmF0ZWQgVmFsdWUgKENTVikiLCJ2YWx1ZSI6IkNTViJ9LHsiZGlzcGxheSI6Ikdlb0pTT04gKEdlb2dyYXBoaWMgSmF2YVNjcmlwdCBPYmplY3QgTm90YXRpb24pIiwidmFsdWUiOiJHRU9KU09OIn0seyJkaXNwbGF5IjoiR1BTIGVYY2hhbmdlIEZvcm1hdCAoR1BYKSIsInZhbHVlIjoiR1BYIn0seyJkaXNwbGF5IjoiQmVudGxleSBNaWNyb1N0YXRpb24gRGVzaWduIChWNykiLCJ2YWx1ZSI6IklHRFMifSx7ImRpc3BsYXkiOiJNYXBJbmZvIE1JRi9NSUQiLCJ2YWx1ZSI6Ik1JRiJ9LHsiZGlzcGxheSI6Ik1hcEluZm8gVEFCIChNSVRBQikiLCJ2YWx1ZSI6Ik1JVEFCIn0seyJkaXNwbGF5IjoiR29vZ2xlIEVhcnRoIEtNTCIsInZhbHVlIjoiT0dDS01MIn0seyJkaXNwbGF5IjoiQXV0b2Rlc2sgTWFwR3VpZGUgRW50ZXJwcmlzZSBTREYiLCJ2YWx1ZSI6IlNERjMifSx7ImRpc3BsYXkiOiJFc3JpIFNoYXBlIiwidmFsdWUiOiJTSEFQRUZJTEUifSx7ImRpc3BsYXkiOiJTUUxpdGUgU3BhdGlhbCAoRkRPKSIsInZhbHVlIjoiU1FMSVRFM0ZETyJ9LHsiZGlzcGxheSI6IkdNTCAoR2VvZ3JhcGh5IE1hcmt1cCBMYW5ndWFnZSkiLCJ2YWx1ZSI6IkdNTCJ9XSwic29ydCI6Im5vU29ydCJ9LCJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJuYW1lIjoiRGVzdGluYXRpb25Gb3JtYXQiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBGb3JtYXQiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJjb29yZGluYXRlU3lzdGVtcyIsInJlcHJvamVjdGlvbkVuZ2luZSI6ImZtZSJ9LCJkZWZhdWx0VmFsdWUiOiIiLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJuYW1lIjoiQ09PUkRTWVNfRGVzdCIsInByb21wdCI6Ik91dHB1dCBDb29yZGluYXRlIFN5c3RlbSIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_GENERIC" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILE_OR_URL SourceDataset_GENERIC INCLUDE_WEB_BROWSER%All_files(*)|* Source File"
+#! />
+#!     <INFO NAME="SourceFormat" 
+#!   DEFAULT_VALUE="GUESS_FROM_EXTENSION"
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI LOOKUP_CHOICE SourceFormat *Have&lt;space&gt;FME&lt;space&gt;guess&lt;space&gt;from&lt;space&gt;the&lt;space&gt;file&lt;space&gt;extension*,GUESS_FROM_EXTENSION%Autodesk&lt;space&gt;AutoCAD&lt;space&gt;DWG&lt;solidus&gt;DXF,ACAD%Comma&lt;space&gt;Separated&lt;space&gt;Value&lt;space&gt;&lt;openparen&gt;CSV&lt;closeparen&gt;,CSV%GeoJSON&lt;space&gt;&lt;openparen&gt;Geographic&lt;space&gt;JavaScript&lt;space&gt;Object&lt;space&gt;Notation&lt;closeparen&gt;,GEOJSON%GML&lt;space&gt;&lt;openparen&gt;Geography&lt;space&gt;Markup&lt;space&gt;Language&lt;closeparen&gt;,GML%GPS&lt;space&gt;eXchange&lt;space&gt;Format&lt;space&gt;&lt;openparen&gt;GPX&lt;closeparen&gt;,GPX%Bentley&lt;space&gt;MicroStation&lt;space&gt;Design&lt;space&gt;&lt;openparen&gt;V7&lt;closeparen&gt;,IGDS%MapInfo&lt;space&gt;MIF&lt;solidus&gt;MID,MIF%MapInfo&lt;space&gt;TAB&lt;space&gt;&lt;openparen&gt;MITAB&lt;closeparen&gt;,MITAB%Google&lt;space&gt;Earth&lt;space&gt;KML,OGCKML%Autodesk&lt;space&gt;MapGuide&lt;space&gt;Enterprise&lt;space&gt;SDF,SDF3%Esri&lt;space&gt;Shape,SHAPEFILE%SQLite&lt;space&gt;Spatial&lt;space&gt;&lt;openparen&gt;FDO&lt;closeparen&gt;,SQLITE3FDO Source Format"
+#! />
+#!     <INFO NAME="COORDSYS" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI OPTIONAL COORDSYS COORDSYS Input Coordinate System"
+#! />
+#!     <INFO NAME="GENERIC_OUT_BASE_NAME_GENERIC" 
+#!   DEFAULT_VALUE="translated_data"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI OPTIONAL STRING GENERIC_OUT_BASE_NAME_GENERIC Destination Filename"
+#! />
+#!     <INFO NAME="DestinationFormat" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="STAND_ALONE"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI LOOKUP_CHOICE DestinationFormat Autodesk&lt;space&gt;AutoCAD&lt;space&gt;DWG&lt;solidus&gt;DXF,ACAD%Comma&lt;space&gt;Separated&lt;space&gt;Value&lt;space&gt;&lt;openparen&gt;CSV&lt;closeparen&gt;,CSV%GeoJSON&lt;space&gt;&lt;openparen&gt;Geographic&lt;space&gt;JavaScript&lt;space&gt;Object&lt;space&gt;Notation&lt;closeparen&gt;,GEOJSON%GPS&lt;space&gt;eXchange&lt;space&gt;Format&lt;space&gt;&lt;openparen&gt;GPX&lt;closeparen&gt;,GPX%Bentley&lt;space&gt;MicroStation&lt;space&gt;Design&lt;space&gt;&lt;openparen&gt;V7&lt;closeparen&gt;,IGDS%MapInfo&lt;space&gt;MIF&lt;solidus&gt;MID,MIF%MapInfo&lt;space&gt;TAB&lt;space&gt;&lt;openparen&gt;MITAB&lt;closeparen&gt;,MITAB%Google&lt;space&gt;Earth&lt;space&gt;KML,OGCKML%Autodesk&lt;space&gt;MapGuide&lt;space&gt;Enterprise&lt;space&gt;SDF,SDF3%Esri&lt;space&gt;Shape,SHAPEFILE%SQLite&lt;space&gt;Spatial&lt;space&gt;&lt;openparen&gt;FDO&lt;closeparen&gt;,SQLITE3FDO%GML&lt;space&gt;&lt;openparen&gt;Geography&lt;space&gt;Markup&lt;space&gt;Language&lt;closeparen&gt;,GML Destination Format"
+#! />
+#!     <INFO NAME="COORDSYS_Dest" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI OPTIONAL COORDSYS COORDSYS_Dest Output Coordinate System"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="3"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This reader feature type&apos;s Merge Parameters &lt;br /&gt;are configured so that all feature types send &lt;br /&gt;their features through this feature type &lt;br /&gt;regardless of name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-760.94468533460974 -388.75460978746139"
+#!   TOP_LEFT="-760.94468533460974 -388.75460978746139"
+#!   BOTTOM_RIGHT="79.688220994453559 -618.75660980746159"
+#!   BOUNDING_RECT="-760.94468533460974 -388.75460978746139 840.6329063290633 230.0020000200002"
+#!   ORDER="3"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{c658bcee-d159-4717-b449-630f5b0fcf32}"
+#!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,0.78431372549019607"
+#!   SIZE_POLICY="8"
+#!   ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This writer feature type&apos;s Dynamic Parameters are &lt;br /&gt;configured so that at run time the feature type&apos;s &lt;br /&gt;schema is determined from the source file.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="521.87738898476641 -388.75460978746139"
+#!   TOP_LEFT="521.87738898476641 -388.75460978746139"
+#!   BOTTOM_RIGHT="1453.1362015728923 -575.00617230308649"
+#!   BOUNDING_RECT="521.87738898476641 -388.75460978746139 931.25881258812592 186.25156251562515"
+#!   ORDER="7"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{0d37fffc-be23-4b5e-9eb0-a3d2850ba10a}"
+#!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,0.78431372549019607"
+#!   SIZE_POLICY="8"
+#!   ANCHORED_NODE="4"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="9"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;The Generic Reader allows you to specify&#13;&lt;br&gt;a file to read as well as the format or it will &#13;&lt;br&gt;attempt to guess the format used by the file.&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-760.94468533460974 59.37558875593777"
+#!   TOP_LEFT="-760.94468533460974 59.37558875593777"
+#!   BOTTOM_RIGHT="-760.94468533460974 60.37558875593777"
+#!   BOUNDING_RECT="-760.94468533460974 59.37558875593777 0 -1"
+#!   ORDER="4"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{24abc617-9813-45d1-ba77-3fd333b0d646}"
+#!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="10"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;The Generic Writer allows you to specify an&#13;&lt;br&gt;output format for the destination file.&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="600.00337453375005 59.37558875593777"
+#!   TOP_LEFT="600.00337453375005 59.37558875593777"
+#!   BOTTOM_RIGHT="600.00337453375005 60.37558875593777"
+#!   BOUNDING_RECT="600.00337453375005 59.37558875593777 0 -1"
+#!   ORDER="5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{5d3cb6ca-3740-4526-97c8-69221ab23d67}"
+#!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="7"
+#!   NAME="Generic Reader"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-847.3234136082815 191.32004099093729"
+#!   ORDER="500000000000000"
+#!   PALETTE_COLOR="Color5"
+#!   BOTTOM_RIGHT="166.06218024765712 -685.06505286000117"
+#!   BOUNDING_RECT="-847.3234136082815 191.32004099093729 1013.3855938559386 876.38509385093846"
+#!   STICKY="true"
+#!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
+#!   CONTENTS="3 2 9 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="8"
+#!   NAME="Generic Writer"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="429.50712507125081 191.32004099093729"
+#!   ORDER="500000000000000"
+#!   PALETTE_COLOR="Color6"
+#!   BOTTOM_RIGHT="1520.5071250712508 -691.31511536062624"
+#!   BOUNDING_RECT="429.50712507125081 191.32004099093729 1091 882.63515635156352"
+#!   STICKY="true"
+#!   COLOUR="0.59215686274509804,0.8901960784313725,0.90980392156862744,1"
+#!   CONTENTS="5 4 10 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_GENERIC_1,GENERIC_IN_FME_GROUP_NAMED1_GENERIC_1,GENERIC_IN_REAL_FORMAT_GENERIC_1,GENERIC_IN_NETWORK_AUTHENTICATION_GENERIC_1,DestDataset_GENERIC_2,GENERIC_OUT_FME_GROUP_NAMED1_GENERIC_2,GENERIC_OUT_FORMAT_GENERIC_2,GENERIC_OUT_BASE_NAME_GENERIC_2,GENERIC_OUT_FME_GROUP_NAMED2_GENERIC_2,GENERIC_OUT_MIME_TYPE_GENERIC_2
+# ============================================================================
+DEFAULT_MACRO SourceDataset_GENERIC 
+
+DEFAULT_MACRO SourceFormat GUESS_FROM_EXTENSION
+
+DEFAULT_MACRO COORDSYS 
+
+DEFAULT_MACRO GENERIC_OUT_BASE_NAME_GENERIC translated_data
+
+DEFAULT_MACRO DestinationFormat 
+
+DEFAULT_MACRO COORDSYS_Dest 
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_GENERIC$encode)} == {}} { puts_real {Parameter 'SourceDataset_GENERIC' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceFormat$encode)} == {}} { puts_real {Parameter 'SourceFormat' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestinationFormat$encode)} == {}} { puts_real {Parameter 'DestinationFormat' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} GENERIC
+MULTI_READER_KEYWORD{0} GENERIC_1
+MULTI_READER_GEN_DIRECTIVES{0} _MERGE_SCHEMAS,YES,UPDATE_FEATURE_TYPES,no,GENERIC_EXPOSE_FORMAT_ATTRS,,EXPOSE_ATTRS_GROUP,,REAL_FORMAT,GUESS_FROM_EXTENSION
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} GENERIC
+MULTI_WRITER_KEYWORD{0} GENERIC_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GENERIC_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GENERIC GENERIC_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_GENERIC_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GENERIC GENERIC_1
+DEFAULT_MACRO SourceDataset_GENERIC_1 $(SourceDataset_GENERIC)
+GUI FILE_OR_URL SourceDataset_GENERIC_1 All_files|* Source Dataset:
+GENERIC_1_EXTENSION
+DEFAULT_MACRO GENERIC_IN_FME_GROUP_NAMED1_GENERIC_1 
+GUI OPTIONAL DISCLOSUREGROUP GENERIC_IN_FME_GROUP_NAMED1_GENERIC_1 GENERIC_IN_REAL_FORMAT_GENERIC_1 Input
+DEFAULT_MACRO GENERIC_IN_REAL_FORMAT_GENERIC_1 GUESS_FROM_EXTENSION
+GENERIC_1_REAL_FORMAT "$(GENERIC_IN_REAL_FORMAT_GENERIC_1)"
+GUI READERPICK GENERIC_IN_REAL_FORMAT_GENERIC_1 Input Format:
+DEFAULT_MACRO GENERIC_IN_EXPOSE_ATTRS_GROUP_GENERIC_1 
+GENERIC_1_EXPOSE_ATTRS_GROUP "$(GENERIC_IN_EXPOSE_ATTRS_GROUP_GENERIC_1)"
+# ===========================================================================
+DEFAULT_MACRO GENERIC_IN_NETWORK_AUTHENTICATION_GENERIC_1 
+GENERIC_1_NETWORK_AUTHENTICATION "$(GENERIC_IN_NETWORK_AUTHENTICATION_GENERIC_1)"
+GUI OPTIONAL AUTHENTICATOR GENERIC_IN_NETWORK_AUTHENTICATION_GENERIC_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO GENERIC_IN_ATTRIBUTE_READING_GENERIC_1 ALL
+GENERIC_1_ATTRIBUTE_READING "$(GENERIC_IN_ATTRIBUTE_READING_GENERIC_1)"
+# ============================================================================ 
+GENERIC_1_GENERATE_FME_BUILD_NUM 20155
+GENERIC_1_DATASET "$(SourceDataset_GENERIC_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GENERIC_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER GENERIC GENERIC_2
+# ============================================================================
+#
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GENERIC_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GENERIC GENERIC_2
+DEFAULT_MACRO DestDataset_GENERIC_2 E:/Safe Software/FMEFlow/resources/system/temp/engineresults
+GUI DIRNAME DestDataset_GENERIC_2 Destination Generic (Any Format) Folder:
+DEFAULT_MACRO GENERIC_OUT_FME_GROUP_NAMED1_GENERIC_2 
+GUI OPTIONAL DISCLOSUREGROUP GENERIC_OUT_FME_GROUP_NAMED1_GENERIC_2 GENERIC_OUT_FORMAT_GENERIC_2%GENERIC_OUT_BASE_NAME_GENERIC_2 Writer Parameters
+DEFAULT_MACRO GENERIC_OUT_FORMAT_GENERIC_2 $(DestinationFormat)
+GENERIC_2_FORMAT "$(GENERIC_OUT_FORMAT_GENERIC_2)"
+GUI WRITERPICK GENERIC_OUT_FORMAT_GENERIC_2 Output Format:
+DEFAULT_MACRO GENERIC_OUT_BASE_NAME_GENERIC_2 $(GENERIC_OUT_BASE_NAME_GENERIC)
+GENERIC_2_BASE_NAME "$(GENERIC_OUT_BASE_NAME_GENERIC_2)"
+GUI OPTIONAL TEXT GENERIC_OUT_BASE_NAME_GENERIC_2 Base filename
+#!----------------------------------------------------------------------
+#! Are we to operate in dynamic schema mode?
+#!----------------------------------------------------------------------
+#DEFAULT_VALUE DYNAMIC_SCHEMA No
+#-GUI CHOICE DYNAMIC_SCHEMA No%Yes Dynamic Schema Mode
+DEFAULT_MACRO GENERIC_OUT_FME_GROUP_NAMED2_GENERIC_2 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP GENERIC_OUT_FME_GROUP_NAMED2_GENERIC_2 GENERIC_OUT_MIME_TYPE_GENERIC_2 FME Server Parameters
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+# The list of mime types below is far from complete but was determined from
+# http://en.wikipedia.org/wiki/Internet_media_type as the common types.
+DEFAULT_MACRO GENERIC_OUT_MIME_TYPE_GENERIC_2 
+GENERIC_2_MIME_TYPE "$(GENERIC_OUT_MIME_TYPE_GENERIC_2)"
+GUI OPTIONAL STRING_OR_CHOICE GENERIC_OUT_MIME_TYPE_GENERIC_2 application/json%application/pdf%application/x-dvi%application/x-shockwave-flash%application/x-rar-compressed%application/x-tar%application/zip%audio/mpeg%audio/vnd.rn-realaudio%audio/x-ms-wma%audio/x-wav%image/gif%image/jpeg%image/png%image/svg+xml%image/tiff%text/css%text/csv%text/html%text/plain%text/xml%video/mp4%video/mpeg%video/quicktime%video/x-ms-wmv MIME Type:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO GENERIC_OUT_DESTINATION_DATASETTYPE_VALIDATION_GENERIC_2 Yes
+GENERIC_2_DESTINATION_DATASETTYPE_VALIDATION "$(GENERIC_OUT_DESTINATION_DATASETTYPE_VALIDATION_GENERIC_2)"
+# ============================================================================ 
+GENERIC_2_GENERATE_FME_BUILD_NUM 20155
+DEFAULT_MACRO READER_SCHEMAS_TO_SKIP_GENERIC_2 
+GENERIC_2_READER_SCHEMAS_TO_SKIP $(READER_SCHEMAS_TO_SKIP_GENERIC_2)
+GENERIC_2_DATASET "$(DestDataset_GENERIC_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)easyTranslator.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2023.0.0.0 (20230302 - Build 23248 - WIN64)"
+MAPPING_FILE_ID Generic<space>format<space>translator
+DEFAULT_MACRO DATASET_KEYWORD_GENERIC_1 GENERIC_1
+DEFAULT_MACRO DATASET_KEYWORD_GENERIC_2 GENERIC_2
+# -------------------------------------------------------------------------
+
+GENERIC_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+GENERIC_1_COORDINATE_SYSTEM $(COORDSYS)
+GENERIC_2_COORDINATE_SYSTEM $(COORDSYS_Dest)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME easyTranslator
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+GENERIC_1_DEF FeatureTypeName   fme_type                     fme_line   FNODE_                       decimal(11,0)   TNODE_                       decimal(11,0)   LPOLY_                       decimal(11,0)   RPOLY_                       decimal(11,0)   LENGTH                       decimal(18,5)   AIRPORTS_                    decimal(11,0)   AIRPORTS_I                   decimal(11,0)   LINE                         decimal(11,0)   ADD_DATE                     varchar(11)   NBTS                         decimal(11,0)   FILLCHAR                     varchar(1)   NAME                         varchar(12)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_GENERIC_1)   INPUT FEATURE_TYPE *    ROUTE GENERIC GENERIC_1::FeatureTypeName multi_reader_keyword,$(DATASET_KEYWORD_GENERIC_1) TO FME_GENERIC ::FeatureTypeName ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+GENERIC_1_MERGE_DEF GENERIC_1::FeatureTypeName GLOB_NOCASE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureTypeName_GENERIC_1 Splitter"    INPUT FEATURE_TYPE FeatureTypeName    OUTPUT FEATURE_TYPE FeatureTypeName_GENERIC_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC FeatureTypeName_GENERIC_1 TO GENERIC __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>DYNAMIC<closeparen>,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>DYNAMIC<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>fme_feature_type<lt>closeparen<gt><comma>DYNAMIC<closeparen> COORDINATE_SYSTEM $(COORDSYS_Dest) GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+GENERIC_2_DEF_TEMPLATE DYNAMIC   fme_type                     {FME_GEN_GEOMETRY}   fme_schema_readers           GENERIC_1   fme_schema_feature_first     No

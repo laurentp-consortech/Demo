@@ -1,0 +1,6 @@
+*.recover
+*.log
+.merge*
+.diff*
+*.yml
+*.yaml

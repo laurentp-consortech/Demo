@@ -1,0 +1,1379 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        fme.exe HelloLizard.fmw
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_PYTHON_DATA_CACHING="No"
+#!   BEGIN_TCL=""
+#!   CATEGORY="3D"
+#!   DATA_CACHING_LIMIT="0"
+#!   DESCRIPTION="&lt;p&gt;&lt;strong&gt;Purpose &amp;amp; Objectives&lt;/strong&gt;&lt;/p&gt;&#10;&lt;p&gt;This workspace displays a model of the FME Lizard mascot in the FME Realize app. The FME Lizard also has a summary annotation created when the user points at the model in the app.&lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;Key Transformer&lt;/strong&gt; &lt;/p&gt;&#10;&lt;p&gt;AttributeCreator: Creates a summary annotation on the FME Lizard feature.&lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;Data Source(s) - Reader Feature Type&lt;/strong&gt;&lt;/p&gt;&#10;&lt;p&gt;OBJ Reader reads in the FME Lizard 3D model as a .obj file&lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;Data Output - Writer Feature Type&lt;/strong&gt;&lt;/p&gt;&#10;&lt;p&gt;FME AR Writer saves the geometry into a form that is overlaid on a live view in AR&lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;Customization&lt;/strong&gt;&lt;/p&gt;&#10;&lt;p&gt;To customize this workspace, you can change the following:&lt;/p&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;Attributes to display in AR as summary annotations with the AttributeCreator transformer&#10;3D model of the FME Lizard with your own model&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;p&gt;If you&apos;re recreating this workspace with your own data, it is recommended to build the workspace from scratch as your dataset will have different attributes and schema (structure).&lt;/p&gt;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="4898.06 2482.95"
+#!   DOC_TOP_LEFT="-3619.22 -1375.01"
+#!   ENABLE_DATA_CACHING="No"
+#!   ENABLE_FEATURE_COUNTING="Yes"
+#!   ENABLE_PERFORMANCE_PROFILING="No"
+#!   END_PYTHON=""
+#!   END_PYTHON_DATA_CACHING="No"
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="25560"
+#!   FME_BULK_MODE_THRESHOLD=""
+#!   FME_DOCUMENT_GUID="fb742ab0-0fea-4015-b8d7-0681918aab94"
+#!   FME_DOCUMENT_PRIORGUID="75f8ec06-afc9-4334-a74b-b6e01c1a45eb,0f841f1d-948e-4e0f-b72c-072a57a455b7,d2191b3a-6e7a-4549-a0f6-9755308670dc,f88aa92d-d27f-45b1-9080-823f998b8622,70a39dd0-f46a-4617-ac1b-c41214c4f673,5314a045-1841-443c-b9c6-7f6c985db47a,d3d2b99f-ed35-4b17-a928-73e44dcf51c1,27afc025-2850-490c-8801-cd75918e781e,ecf41c12-0962-4bb4-891a-23ab36fd938f,7a1a9296-4d62-4ac3-ba4c-db7d95e9419d,2b3ae784-5003-4bd1-a170-0342534cec50,bbb93ef8-8f1f-40ff-9ddf-5ce327f40887,fdf2ba5d-edeb-49d9-ae60-4f5858f2c5af,502e9f3a-006f-4fdc-b14f-99a40125bce6,9948132f-0b8c-4f0c-85a3-347e8fc051f8,2ae35fc6-8730-454a-a1a6-d1c421c87fd0,3cc10e00-8b06-4f47-98d2-078994c47030,b1035da1-e3a3-408b-9cc2-02c6c731fced,f05a84ee-a78c-479f-a42c-5a4cea371801,b342585d-5b9f-4431-8224-b7cefed02f0c,50cb3c71-bd77-467b-ac42-58a0a741a8d2,eb835cc7-4852-4d2e-b0cc-74bb16d32e8c,bd5fc394-0c17-4a26-82e8-ef8e797e52ed,a2ddaa19-bf7f-4b5a-92b9-9abd5d2f5e60,1479e780-b107-4d20-93e4-f84d0e690d28,b784a5eb-d623-4d21-81da-9293d4c02955,2a506def-a352-49de-b52b-d2525f979791,57660b1f-5ba2-4850-b228-300554d6a363,dafad8cf-130f-4990-9c29-88113154b5ce,b9cfb2e9-7495-4617-a699-10b2f544df11,2b542c1f-0326-4143-a07d-59d19eee5fff,3d724c41-6e14-40ec-b4e4-b7a93bb0b2a3,c532048f-989f-4c41-871f-657f7b22b2b1,8da37a65-aef6-4265-a0bc-1314fda1b646,4106bc9d-0360-4242-8af3-ee0e253338ce,6935779e-78cc-4357-a671-1554a798d500,4e678014-86b0-4b4d-9094-c692840b97ff,62271046-eef7-4ca3-aef3-52c7288c5515,05541220-b820-4b3c-b775-4af3e78087f2,edad0624-99b1-425c-958b-8451ffbce5e0,382d34a0-e218-4303-bc28-284d45f9bea9,2460be1e-fc5c-4079-8376-1360c24863c6,ef8e1378-4c9c-42c4-8273-fad9f014e993,80705a65-6b8c-48c2-a6db-5df6b8b7632a,51dbadbb-0bd9-4966-a41e-0d759edda1c8,25d6ab18-4850-4de4-950a-5cda360d2faa,f834f8ab-f918-40b1-bebf-f00da5e01a50"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2025.1.0.0 (20250428 - Build 25560 - macosx-aarch64)"
+#!   LAST_SAVE_DATE="2025-05-15T10:40:03"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION="**Purpose &amp; Objectives**&#10;&#10;&#10;This workspace displays a model of the FME Lizard mascot in the FME Realize app. The FME Lizard also has a summary annotation created when the user points at the model in the app.&#10;&#10;&#10;**Key Transformer** &#10;&#10;&#10;AttributeCreator: Creates a summary annotation on the FME Lizard feature.&#10;&#10;&#10;**Data Source(s) - Reader Feature Type**&#10;&#10;&#10;OBJ Reader reads in the FME Lizard 3D model as a .obj file&#10;&#10;&#10;**Data Output - Writer Feature Type**&#10;&#10;&#10;FME AR Writer saves the geometry into a form that is overlaid on a live view in AR&#10;&#10;&#10;**Customization**&#10;&#10;&#10;To customize this workspace, you can change the following:&#10;&#10;- Attributes to display in AR as summary annotations with the AttributeCreator transformer&#10;3D model of the FME Lizard with your own model&#10;&#10;If you&apos;re recreating this workspace with your own data, it is recommended to build the workspace from scratch as your dataset will have different attributes and schema (structure).&#10;"
+#!   MARKDOWN_USAGE="For help with this workspace, please contact Safe Software Support and reference FME AR: Hello Lizard."
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PROMPT_FOR_PARAMS="Yes"
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   STOP_AT_BREAKPOINTS="No"
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="HelloLizard"
+#!   USAGE="&lt;p&gt;For help with this workspace, please contact Safe Software Support and reference FME AR: Hello Lizard.&lt;/p&gt;"
+#!   USE_MARKDOWN="YES"
+#!   VIEW_POSITION="-4220.34 1308.28"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="133"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="OBJ"
+#!   DATASET="$(FME_MF_DIR)LizardsHoody2023.zip"
+#!   KEYWORD="OBJ_3"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   FEATURE_TYPE_CASE=""
+#!   FEATURE_TYPE_LENGTH="0"
+#!   FEATURE_TYPE_INVALID_CHARS=""
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string string fme_type string multi_reader_full_id string multi_reader_id string multi_reader_keyword string multi_reader_type string obj_type string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="23311"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OBJ_OUT_WRITE_FME_VERSION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="OBJ File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the OBJ file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the OBJ file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="FME_AR"
+#!   DATASET="FMELizard.fmear"
+#!   KEYWORD="FME_AR_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   FEATURE_TYPE_CASE="ANY"
+#!   FEATURE_TYPE_LENGTH="0"
+#!   FEATURE_TYPE_INVALID_CHARS=""
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename text fme_color text fme_dataset text fme_feature_type text fme_fill_color text fme_geometry text fme_primary_axis real fme_rotation real fme_secondary_axis real fme_start_angle real fme_sweep_angle real fme_text_size real fme_text_string text fme_type text fmear_anchor_latitude real fmear_anchor_longitude real fmear_feature_summary text fmear_location_feature text fmear_model_expiry text fmear_type text"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="23311"
+#!   NAME="ARWriter"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Asset1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="FME AR Asset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the FME AR file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the FME AR file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="FME_AR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="FME_AR"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_surface"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_surface"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_surface"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="FME_AR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fmear_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="FME_AR"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Lizard"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="23"
+#!   POSITION="616.64461822677572 -690.88205184377421"
+#!   BOUNDING_RECT="616.64461822677572 -690.88205184377421 454 71"
+#!   ORDER="500000000001434.5"
+#!   COLLAPSED="false"
+#!   KEYWORD="FME_AR_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   FEAT_GEOMTYPE="All"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_GEOMETRY NAME="" TYPE="All" SPATIAL_TYPE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fmear_feature_summary" ATTR_TYPE="text"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="FMELizardLogo2023"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="48"
+#!   POSITION="-1075.6107829165962 -690.88205184377421"
+#!   BOUNDING_RECT="-1075.6107829165962 -690.88205184377421 678.12451646459226 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="OBJ_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   FEAT_GEOMTYPE="obj_point obj_line obj_face obj_collection"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_GEOMETRY NAME="" TYPE="obj_point obj_line obj_face obj_collection" SPATIAL_TYPE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmedatastreaming"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   NAME="OUTPUT_WRITER"
+#!   VALUE="FME_AR_1"
+#! />
+#! <PROPERTY
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="Samples"
+#! />
+#! <ITEM
+#!   NAME="HelloLizard.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":DatasetMgr_FME_AR_1:DestDataset_FME_AR_1"
+#!   VALUE="FMELizard.fmear"
+#! />
+#! <MODIFICATION
+#!   UID=":DatasetMgr_OBJ_3:SourceDataset_OBJ_3"
+#!   VALUE="$(FME_MF_DIR)1/Data/LizardsHoody2023.zip"
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! </MODIFICATIONS>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="OBJ_3"
+#!   OVERRIDE="-OBJ_3_DATASET"
+#!   DATASET="OBJ_3/LizardsHoody2023.zip"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="FME_AR_1"
+#!   OVERRIDE="-FME_AR_1_DATASET"
+#!   DATASET="FME_AR_1/FMELizard.fmear"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbXX0="
+#! >
+#! <PARAMETER_INFO>
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="29"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Creates a point two meters away from the Lizard, which will be where the observer is located.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1075.6107829165962 -17.103662199412639"
+#!   TOP_LEFT="-1075.6107829165962 -17.103662199412639"
+#!   BOTTOM_RIGHT="-644.65384834725057 -322.10641222691288"
+#!   BOUNDING_RECT="-1075.6107829165962 -17.103662199412639 430.95693456934566 305.00275002750027"
+#!   ORDER="500000000001425.5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{419a70d6-4553-4037-90e2-99de8ab547ad}"
+#!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="31"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="41"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Save or stream FMEAR file&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;in Full Scale (1:1)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="617.71090138960733 -871.50945811783708"
+#!   TOP_LEFT="617.71090138960733 -871.50945811783708"
+#!   BOTTOM_RIGHT="1070.6055553361468 -1076.5112081353373"
+#!   BOUNDING_RECT="617.71090138960733 -871.50945811783708 452.89465394653945 205.00175001750017"
+#!   ORDER="500000000001430.5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{8bab1dcb-8ac2-49d6-b6a9-47d84a7e95b1}"
+#!   COLOUR="0.96862745098039216,0.46274509803921571,0.27450980392156865,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="23"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="14"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;helvetica&apos;;&quot;&gt;Tells the AR model where the observer should be anchored.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-263.10623880828399 -126.47975596035025"
+#!   TOP_LEFT="-263.10623880828399 -126.47975596035025"
+#!   BOTTOM_RIGHT="190.8196754508586 -127.47975596035025"
+#!   BOUNDING_RECT="-263.10623880828399 -126.47975596035025 453.92591425914259 1"
+#!   ORDER="500000000001435.5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{4ed6759b-9127-4ed7-b7f0-a0b009adf423}"
+#!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="35"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="15"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;a name=&quot;docs-internal-guid-97382d60-7fff-da8f-351a-ca78bb827703&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:12pt; font-weight:700; color:#000000; background-color:transparent;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:12pt; font-weight:700; color:#000000; background-color:transparent;&quot;&gt;urpose &amp;amp; Objectives&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;This workspace displays a model of the FME Lizard mascot in the FME Realize app. The FME Lizard also has a summary annotation created when the user points at the model in the app.&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:12pt; font-weight:700; color:#000000; background-color:transparent;&quot;&gt;Key Transformer&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;a href=&quot;https://docs.safe.com/fme/html/FME-Form-Documentation/FME-Transformers/Transformers/attributecreator.htm&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; text-decoration: underline;&quot;&gt;AttributeCreator&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000;&quot;&gt;: Creates a summary annotation on the FME Lizard feature.&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:12pt; font-weight:700; color:#000000; background-color:transparent;&quot;&gt;Data Source(s) - Reader Feature Type&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;a href=&quot;https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/obj/obj.htm&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; text-decoration: underline; background-color:transparent;&quot;&gt;OBJ Reader&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/flatgeobuf/flatgeobuf.htm?Highlight=flatGeobuf&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; text-decoration: underline; color:#0078d4; background-color:transparent;&quot;&gt; &lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;reads in the FME Lizard 3D model as a .obj file&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000; background-color:transparent;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:12pt; font-weight:700; color:#000000; background-color:transparent;&quot;&gt;Data Output - Writer Feature Type&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%; background-color:transparent;&quot;&gt;&lt;a href=&quot;https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/fme_ar/fme_ar.htm?&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; text-decoration: underline; background-color:transparent;&quot;&gt;FME AR Writer&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt; saves the geometry into a form that is overlaid on a live view in AR&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px; line-height:138%; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:12pt; font-weight:700; color:#000000; background-color:transparent;&quot;&gt;Customization&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;To customize this workspace, you can change the following:&lt;/span&gt;&lt;/p&gt;&#10;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&#10;&lt;li style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;Attributes to display in AR as summary annotations with the AttributeCreator transformer&lt;/li&gt;&#10;&lt;li style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;3D model of the FME Lizard with your own model&lt;/li&gt;&lt;/ul&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;If you&apos;re recreating this workspace with your own data, it is recommended to build the workspace from scratch as your dataset will have different attributes and schema (structure).&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000; background-color:transparent;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;For help with this workspace, please contact&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000; background-color:transparent;&quot;&gt; &lt;/span&gt;&lt;a href=&quot;https://support.safe.com/hc/p/Support&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; text-decoration: underline; background-color:transparent;&quot;&gt;Safe Software Support&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; color:#000000; background-color:transparent;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000; background-color:transparent;&quot;&gt;and reference&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-style:italic; color:#000000; background-color:transparent;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; font-style:italic; color:#000000; background-color:transparent;&quot;&gt;FME AR: Hello Lizard.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3619.2220697913917 1106.1686805866425"
+#!   TOP_LEFT="-3619.2220697913917 1106.1686805866425"
+#!   BOTTOM_RIGHT="-1293.3243108138022 206.34748237466044"
+#!   BOUNDING_RECT="-3619.2220697913917 1106.1686805866425 2325.8977589775895 899.82119821198205"
+#!   ORDER="500000000000015"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{7c5c81f4-2c1f-40b5-8e39-3b1f69dd8125}"
+#!   COLOUR="0.92941176470588238,0.92941176470588238,0.92941176470588238,0.50196078431372548"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="16"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This is a not real-world example, hence, we can place it anywhere in world, so the anchor &amp;quot;knows&amp;quot; its in-the-model location, but not the geolocation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1075.6107829165962 224.13091692999961"
+#!   TOP_LEFT="-1075.6107829165962 224.13091692999961"
+#!   BOTTOM_RIGHT="191.7920161113941 19.129166912499443"
+#!   BOUNDING_RECT="-1075.6107829165962 224.13091692999961 1267.4027990279903 205.00175001750017"
+#!   ORDER="500000000002271.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{fa4a68f0-63f1-438b-b485-b22b640832ce}"
+#!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="18"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:6pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Step 1:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Change the summary annotations and appearance styling for the different infrastructure features (optional). &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1114.2597150571871 989.22024360521027"
+#!   TOP_LEFT="-1114.2597150571871 989.22024360521027"
+#!   BOTTOM_RIGHT="-364.36209108094738 939.22024360521027"
+#!   BOUNDING_RECT="-1114.2597150571871 989.22024360521027 749.89762397623974 50"
+#!   ORDER="500000000002302.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{65d78daa-2c38-4de6-a47f-21857ad770c9}"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="19"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:6pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Step 2:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Publish the workspace to FME Flow. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1114.2597150571871 709.23405421351868"
+#!   TOP_LEFT="-1114.2597150571871 709.23405421351868"
+#!   BOTTOM_RIGHT="-364.36209108094738 659.23405421351868"
+#!   BOUNDING_RECT="-1114.2597150571871 709.23405421351868 749.89762397623974 50"
+#!   ORDER="500000000002302.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{fde0417a-4c7c-4774-a7c0-21c2aaac4f1d}"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="20"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:700;&quot;&gt;Step 3:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt;&quot;&gt;On FME Flow, create a Flow AR App with this workspace.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-319.39718359273184 989.22024360521027"
+#!   TOP_LEFT="-319.39718359273184 989.22024360521027"
+#!   BOTTOM_RIGHT="430.50044038350791 939.22024360521027"
+#!   BOUNDING_RECT="-319.39718359273184 989.22024360521027 749.89762397623974 50"
+#!   ORDER="500000000002302.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{ffef703b-da99-4997-9e8d-8db91c6042da}"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="21"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;helvetica&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:700;&quot;&gt;Step 4:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt;&quot;&gt;Open the FME Realize app on an iOS device. Connect to your FME Flow. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-319.39718359273184 759.23455421851872"
+#!   TOP_LEFT="-319.39718359273184 759.23455421851872"
+#!   BOTTOM_RIGHT="430.50044038350791 709.23455421851872"
+#!   BOUNDING_RECT="-319.39718359273184 759.23455421851872 749.89762397623974 50"
+#!   ORDER="500000000002302.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{8a232105-1885-4358-bdee-3f677aec2d1e}"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="22"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:6pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:700;&quot;&gt;Step 5:&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Run the AR app created in Step 3 and visualize the data in augented reality. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="485.39330571365053 989.22024360521027"
+#!   TOP_LEFT="485.39330571365053 989.22024360521027"
+#!   BOTTOM_RIGHT="1235.2909296898902 939.22024360521027"
+#!   BOUNDING_RECT="485.39330571365053 989.22024360521027 749.89762397623974 50"
+#!   ORDER="500000000002302.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{576782ac-0e66-408f-a137-d1bf69daaae8}"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="30"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;The user will see a 3D model of the FME Lizard anchored 2 metres away from their device. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-3527.7273383548068 -710.85979954074423"
+#!   TOP_LEFT="-3527.7273383548068 -710.85979954074423"
+#!   BOTTOM_RIGHT="-1368.987500956433 -934.61173706011937"
+#!   BOUNDING_RECT="-3527.7273383548068 -710.85979954074423 2158.7398373983738 223.75193751937519"
+#!   ORDER="500000000001575.5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="true"
+#!   UUID="{2b4f0d58-4002-4467-bb3d-21eb3b6056fe}"
+#!   COLOUR="0.92941176470588238,0.92941176470588238,0.92941176470588238,0.90196078431372551"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="24"
+#!   COMMENT_VALUE="&lt;b&gt;AttributeCreator&amp;nbsp;[AttributeCreator]&lt;/b&gt;&lt;br&gt;New&amp;nbsp;Attributes:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Output&amp;nbsp;Attribute&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;td&gt;Type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;fmear_feature_summary&lt;/td&gt;&lt;td&gt;**FME&amp;nbsp;Lizard**&amp;nbsp;is&amp;nbsp;happy&amp;nbsp;to&amp;nbsp;see&amp;nbsp;you&amp;nbsp;&lt;br&gt;in&amp;nbsp;*Augmented&amp;nbsp;Reality*.&lt;br&gt;`Welcome!`&lt;br&gt;[Visit&amp;nbsp;Safe&amp;nbsp;Software&amp;nbsp;for&amp;nbsp;more](https://www.safe.com)&lt;/td&gt;&lt;td&gt;buffer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+#!   POSITION="-1108.0096525565621 -871.50945811783708"
+#!   TOP_LEFT="-1108.0096525565621 -871.50945811783708"
+#!   BOTTOM_RIGHT="496.00588759883954 -870.50945811783708"
+#!   BOUNDING_RECT="-1108.0096525565621 -871.50945811783708 1604.0155401554016 -1"
+#!   ORDER="500000000002303.75"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{8e15bac3-8669-4c51-a8a0-362fb1a66c35}"
+#!   ANCHORED_NODE="26"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="17"
+#!   NAME="Create Anchor"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1184.4128678988397 340.62840628406292"
+#!   ORDER="500000000000817.38"
+#!   PALETTE_COLOR="Color4"
+#!   BOTTOM_RIGHT="256.25256252562531 -546.88046880468801"
+#!   BOUNDING_RECT="-1184.4128678988397 340.62840628406292 1440.6654304244651 887.50887508875098"
+#!   STICKY="true"
+#!   COLOUR="0.85098039215686272,0.92941176470588238,0.60392156862745094,1"
+#!   CONTENTS="31 34 29 14 16 35 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="25"
+#!   NAME="Running the Workspace - Step-by-step"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1184.4128678988397 1107.9355885758923"
+#!   ORDER="500000000002292.75"
+#!   PALETTE_COLOR="Disabled"
+#!   BOTTOM_RIGHT="1278.8370293254072 490.62990629906403"
+#!   BOUNDING_RECT="-1184.4128678988397 1107.9355885758923 2463.249897224247 617.30568227682829"
+#!   STICKY="true"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   CONTENTS="18 20 22 19 21 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="27"
+#!   NAME="Lizard"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1184.4128678988397 -600.88205184377421"
+#!   ORDER="500000000002304.75"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="1236.3026485570792 -1375.0137501375013"
+#!   BOUNDING_RECT="-1184.4128678988397 -600.88205184377421 2420.715516455919 774.13169829372714"
+#!   STICKY="true"
+#!   COLOUR="0.32549019607843138,0.62352941176470589,0.92549019607843142,1"
+#!   CONTENTS="23 24 26 45 41 48 49 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="37"
+#!   NAME="Scenario"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-3612.0683411054938 -607.1233984404696"
+#!   ORDER="500000000002295.75"
+#!   PALETTE_COLOR="Disabled"
+#!   BOTTOM_RIGHT="-1293.3204045247389 -912.50912509125089"
+#!   BOUNDING_RECT="-3612.0683411054938 -607.1233984404696 2318.7479365807549 305.38572665078129"
+#!   STICKY="true"
+#!   COLOUR="0.8784313725490196,0.8784313725490196,0.8784313725490196,1"
+#!   CONTENTS=""
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="31"
+#!   TYPE="Creator"
+#!   VERSION="6"
+#!   POSITION="-1075.6107829165962 -352.10641222691294"
+#!   BOUNDING_RECT="-1075.6107829165962 -352.10641222691294 430 71"
+#!   ORDER="500000000000214.13"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24179"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="0 -3"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="2D Coordinate List"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="35"
+#!   TYPE="AttributeCreator"
+#!   VERSION="10"
+#!   POSITION="-263.14712109210683 -352.10641222691294"
+#!   BOUNDING_RECT="-263.14712109210683 -352.10641222691294 454 71"
+#!   ORDER="500000000000205.13"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24179"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fmear_location_feature" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; fmear_location_feature SET_TO anchor varchar&lt;openparen&gt;200&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE" PARM_VALUE="NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Substitution"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="AttributeCreator"
+#!   VERSION="10"
+#!   POSITION="-263.14712109210683 -690.88205184377421"
+#!   BOUNDING_RECT="-263.14712109210683 -690.88205184377421 454 71"
+#!   ORDER="500000000001424.5"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23611"
+#!   SHOW_BLANK_INPUT_FT="false"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fmear_feature_summary" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; fmear_feature_summary SET_TO **FME&lt;space&gt;Lizard**&lt;space&gt;is&lt;space&gt;happy&lt;space&gt;to&lt;space&gt;see&lt;space&gt;you&lt;space&gt;&lt;lf&gt;in&lt;space&gt;*Augmented&lt;space&gt;Reality*.&lt;lf&gt;`Welcome!`&lt;lf&gt;&lt;openbracket&gt;Visit&lt;space&gt;Safe&lt;space&gt;Software&lt;space&gt;for&lt;space&gt;more&lt;closebracket&gt;&lt;openparen&gt;https:&lt;solidus&gt;&lt;solidus&gt;www.safe.com&lt;closeparen&gt; buffer"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE" PARM_VALUE="NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Substitution"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="35"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="8"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="Thick"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="48"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="8"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="Thick"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="45"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="8"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="Thick"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="35"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="8"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="Thick"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_OBJ_3,OBJ_IN_FME_GROUP_NAMED1_OBJ_3,OBJ_IN_MERGE_MESH_PARTS_OBJ_3,OBJ_IN_FME_GROUP_NAMED2_OBJ_3,OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_3,OBJ_IN_USE_SEARCH_ENVELOPE_OBJ_3,OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_3,OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_3,OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_3,OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_3,OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_3,OBJ_IN_CLIP_TO_ENVELOPE_OBJ_3,OBJ_IN_NETWORK_AUTHENTICATION_OBJ_3,DestDataset_FME_AR_1,FME_AR_OUT_SCALEGRP_FME_AR_1,FME_AR_OUT_SCALE_FME_AR_1,FME_AR_OUT_NUMERICSCALE_FME_AR_1,FME_AR_OUT_ADVANCED_GROUP_FME_AR_1,FME_AR_OUT_SUPPORT_DEVICES_FME_AR_1
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} OBJ
+MULTI_READER_KEYWORD{0} OBJ_3
+MULTI_READER_GEN_DIRECTIVES{0} EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,MERGE_MESH_PARTS,No,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SEARCH_ENVELOPE_MAXX,0,VARIABLE_FEATURE_TYPES,yes,USE_SEARCH_ENVELOPE,NO,MOVE_TO_WORLD_COORDSYS,Yes,SEARCH_ENVELOPE_MINX,0,CLIP_TO_ENVELOPE,NO,_MERGE_SCHEMAS,YES,OBJ_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MINY,0
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} FME_AR
+PRIMARY_DEST_KEYWORD{0} FME_AR_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OBJ_3"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OBJ OBJ_3
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_OBJ_3 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OBJ OBJ_3
+DEFAULT_MACRO SourceDataset_OBJ_3 $(FME_MF_DIR)LizardsHoody2023.zip
+GUI MULTIFILE SourceDataset_OBJ_3 OBJ_Files(*.obj)|*.obj|All_Files(*)|* Source OBJ File:
+DEFAULT_MACRO OBJ_IN_VARIABLE_FEATURE_TYPES_OBJ_3 yes
+OBJ_3_VARIABLE_FEATURE_TYPES "$(OBJ_IN_VARIABLE_FEATURE_TYPES_OBJ_3)"
+DEFAULT_MACRO OBJ_IN_FME_GROUP_NAMED1_OBJ_3 
+GUI OPTIONAL DISCLOSUREGROUP OBJ_IN_FME_GROUP_NAMED1_OBJ_3 OBJ_IN_MERGE_MESH_PARTS_OBJ_3 Optimization
+DEFAULT_MACRO OBJ_IN_MERGE_MESH_PARTS_OBJ_3 No
+OBJ_3_MERGE_MESH_PARTS "$(OBJ_IN_MERGE_MESH_PARTS_OBJ_3)"
+GUI CHOICE OBJ_IN_MERGE_MESH_PARTS_OBJ_3 Yes%No Merge Mesh Parts:
+DEFAULT_MACRO OBJ_IN_FME_GROUP_NAMED2_OBJ_3 
+GUI OPTIONAL DISCLOSUREGROUP OBJ_IN_FME_GROUP_NAMED2_OBJ_3 OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_3 Coordinate System
+DEFAULT_MACRO OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_3 Yes
+OBJ_3_MOVE_TO_WORLD_COORDSYS "$(OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_3)"
+GUI CHOICE OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_3 Yes%No Move to World Coordinate System:
+DEFAULT_MACRO OBJ_IN_EXPOSE_ATTRS_GROUP_OBJ_3 
+OBJ_3_EXPOSE_ATTRS_GROUP "$(OBJ_IN_EXPOSE_ATTRS_GROUP_OBJ_3)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO OBJ_IN_USE_SEARCH_ENVELOPE_OBJ_3 NO
+OBJ_3_USE_SEARCH_ENVELOPE "$(OBJ_IN_USE_SEARCH_ENVELOPE_OBJ_3)"
+GUI ACTIVEDISCLOSUREGROUP OBJ_IN_USE_SEARCH_ENVELOPE_OBJ_3 OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_3%OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_3%OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_3%OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_3%OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_3%OBJ_IN_CLIP_TO_ENVELOPE_OBJ_3%OBJ_IN_SEARCH_METHOD%OBJ_IN_SEARCH_METHOD_FILTER%OBJ_IN_SEARCH_ORDER%OBJ_IN_SEARCH_FEATURE%OBJ_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_3 <Unused>,0 
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_3 0
+OBJ_3_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_3)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_3 Minimum X:
+# ===========================================================================
+GUI LOOKUP OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_3 <Unused>,0 
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_3 0
+OBJ_3_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_3)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_3 Minimum Y:
+# ===========================================================================
+GUI LOOKUP OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_3 <Unused>,0 
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_3 0
+OBJ_3_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_3)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_3 Maximum X:
+# ===========================================================================
+GUI LOOKUP OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_3 <Unused>,0 
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_3 0
+OBJ_3_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_3)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_3 Maximum Y:
+# ===========================================================================
+GUI LOOKUP OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_3 <Unused>, 
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_3 
+OBJ_3_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_3)"
+GUI OPTIONAL COORDSYS OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_3 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP OBJ_IN_CLIP_TO_ENVELOPE_OBJ_3 <Unused>,NO 
+DEFAULT_MACRO OBJ_IN_CLIP_TO_ENVELOPE_OBJ_3 NO
+OBJ_3_CLIP_TO_ENVELOPE "$(OBJ_IN_CLIP_TO_ENVELOPE_OBJ_3)"
+GUI OPTIONAL CHECKBOX OBJ_IN_CLIP_TO_ENVELOPE_OBJ_3 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_NETWORK_AUTHENTICATION_OBJ_3 
+OBJ_3_NETWORK_AUTHENTICATION "$(OBJ_IN_NETWORK_AUTHENTICATION_OBJ_3)"
+GUI OPTIONAL AUTHENTICATOR OBJ_IN_NETWORK_AUTHENTICATION_OBJ_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO OBJ_IN_ATTRIBUTE_READING_OBJ_3 ALL
+OBJ_3_ATTRIBUTE_READING "$(OBJ_IN_ATTRIBUTE_READING_OBJ_3)"
+# ============================================================================
+OBJ_3_GENERATE_FME_BUILD_NUM 23311
+OBJ_3_DATASET "$(SourceDataset_OBJ_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "FME_AR_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER FME_AR FME_AR_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_FME_AR_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER FME_AR FME_AR_1
+DEFAULT_MACRO DestDataset_FME_AR_1 FMELizard.fmear
+GUI FILENAME DestDataset_FME_AR_1 FME_Augmented_Reality_Archive(*.fmear)|*.fmear|All_Files(*)|* Destination FME Augmented Reality (FMEAR) Archive:
+DEFAULT_MACRO FME_AR_OUT_MOVE_TO_LOCAL_COORDSYS_FME_AR_1 COORDINATES_ONLY
+FME_AR_1_MOVE_TO_LOCAL_COORDSYS "$(FME_AR_OUT_MOVE_TO_LOCAL_COORDSYS_FME_AR_1)"
+DEFAULT_MACRO FME_AR_OUT_LOCAL_COORDSYS_TRANSFORMATION_FME_AR_1 OFFSET_CENTROID_TO_ORIGIN_2D
+FME_AR_1_LOCAL_COORDSYS_TRANSFORMATION "$(FME_AR_OUT_LOCAL_COORDSYS_TRANSFORMATION_FME_AR_1)"
+DEFAULT_MACRO FME_AR_OUT_SCALEGRP_FME_AR_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP FME_AR_OUT_SCALEGRP_FME_AR_1 FME_AR_OUT_SCALE_FME_AR_1%FME_AR_OUT_NUMERICSCALE_FME_AR_1 Scaling Parameters
+DEFAULT_MACRO FME_AR_OUT_ENFORCE_CONSISTENT_FEATURE_COORDSYS_EXISTENCE_FME_AR_1 YES
+FME_AR_1_ENFORCE_CONSISTENT_FEATURE_COORDSYS_EXISTENCE "$(FME_AR_OUT_ENFORCE_CONSISTENT_FEATURE_COORDSYS_EXISTENCE_FME_AR_1)"
+DEFAULT_MACRO FME_AR_OUT_SCALE_FME_AR_1 FULL
+FME_AR_1_SCALE "$(FME_AR_OUT_SCALE_FME_AR_1)"
+GUI ACTIVECHOICE_LOOKUP FME_AR_OUT_SCALE_FME_AR_1 Fit,FIT,FME_AR_OUT_NUMERICSCALE_FME_AR_1%Full<space>Scale,FULL,FME_AR_OUT_NUMERICSCALE_FME_AR_1%Custom,CUSTOM Initial Model Scaling
+DEFAULT_MACRO FME_AR_OUT_NUMERICSCALE_FME_AR_1 <Unused>
+FME_AR_1_NUMERICSCALE "$(FME_AR_OUT_NUMERICSCALE_FME_AR_1)"
+GUI STRING_ENCODED FME_AR_OUT_NUMERICSCALE_FME_AR_1 Custom Scale
+DEFAULT_MACRO FME_AR_OUT_ADVANCED_GROUP_FME_AR_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP FME_AR_OUT_ADVANCED_GROUP_FME_AR_1 FME_DISCLOSURE_CLOSED%FME_AR_OUT_SUPPORT_DEVICES_FME_AR_1 Advanced
+DEFAULT_MACRO FME_AR_OUT_SUPPORT_DEVICES_FME_AR_1 IOS
+FME_AR_1_SUPPORT_DEVICES "$(FME_AR_OUT_SUPPORT_DEVICES_FME_AR_1)"
+GUI LOOKUP_CHOICE FME_AR_OUT_SUPPORT_DEVICES_FME_AR_1 Both<space>Android<space>and<space>iOS,COMBINED%Android<space>(glTF<space>only),ANDROID%iOS<space>(USD<space>only),IOS Support Reading on Devices:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO FME_AR_OUT_DESTINATION_DATASETTYPE_VALIDATION_FME_AR_1 Yes
+FME_AR_1_DESTINATION_DATASETTYPE_VALIDATION "$(FME_AR_OUT_DESTINATION_DATASETTYPE_VALIDATION_FME_AR_1)"
+# ============================================================================
+FME_AR_1_GENERATE_FME_BUILD_NUM 23311
+FME_AR_1_DATASET "$(DestDataset_FME_AR_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+FME_BULK_MODE_THRESHOLD 
+LAST_SAVE_BUILD "FME 2025.1.0.0 (20250428 - Build 25560 - macosx-aarch64)"
+MAPPING_FILE_ID HelloLizard
+DEFAULT_MACRO DATASET_KEYWORD_OBJ_3 OBJ_3
+DEFAULT_MACRO DATASET_KEYWORD_FME_AR_1 FME_AR_1
+# -------------------------------------------------------------------------
+
+OBJ_3_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+OBJ_3_DEF FMELizardLogo2023
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_OBJ_3)   INPUT FEATURE_TYPE *    ROUTE OBJ OBJ_3::FMELizardLogo2023 multi_reader_keyword,$(DATASET_KEYWORD_OBJ_3) TO FME_GENERIC ::FMELizardLogo2023 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+OBJ_3_MERGE_DEF OBJ_3::FMELizardLogo2023 EXACT FMELizardLogo2023
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FMELizardLogo2023_OBJ_3 Splitter"    INPUT FEATURE_TYPE FMELizardLogo2023    OUTPUT FEATURE_TYPE FMELizardLogo2023_OBJ_3
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_2_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_2_XML     NOT_ACTIVATED
+MACRO Creator_2_CLASSIC NOT_ACTIVATED
+MACRO Creator_2_2D3D    2D_GEOMETRY
+MACRO Creator_2_COORDS  0 -3
+INCLUDE [ if { {2D Coordinate List} == {Geometry Object} } {            puts {MACRO Creator_2_XML *} } ]
+INCLUDE [ if { {2D Coordinate List} == {2D Coordinate List} } {            puts {MACRO Creator_2_2D3D 2D_GEOMETRY};            puts {MACRO Creator_2_CLASSIC *} } ]
+INCLUDE [ if { {2D Coordinate List} == {3D Coordinate List} } {            puts {MACRO Creator_2_2D3D 3D_GEOMETRY};            puts {MACRO Creator_2_CLASSIC *} } ]
+INCLUDE [ if { {2D Coordinate List} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {0 -3}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator_2: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `0 -3' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_2_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2_2D3D 2D_GEOMETRY};            puts {MACRO Creator_2_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_2_XML)} CreationFactory    FACTORY_NAME { Creator_2_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<Unused>) }
+FACTORY_DEF {$(Creator_2_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_2_CLASSIC_Creator }    $(Creator_2_2D3D) { $(Creator_2_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_2_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_2_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_2_CREATED        fme_feature_type Creator_2         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_2_CREATED Brancher -1 34"   INPUT FEATURE_TYPE Creator_2_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_2 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_2_CREATED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "fmear_location_feature" "SET_TO" "anchor" "varchar<openparen>200<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE FMELizardLogo2023_OBJ_3    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "fmear_feature_summary" "SET_TO" "**FME<space>Lizard**<space>is<space>happy<space>to<space>see<space>you<space><lf>in<space>*Augmented<space>Reality*.<lf>`Welcome!`<lf><openbracket>Visit<space>Safe<space>Software<space>for<space>more<closebracket><openparen>https:<solidus><solidus>www.safe.com<closeparen>" "buffer" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO FME_AR __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Lizard<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_2_OUTPUT TO FME_AR __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Lizard<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+FME_AR_1_DEF Lizard
